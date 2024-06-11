@@ -1,6 +1,6 @@
 <?php
 function deleteRide($pdo, $ride_id) {
-    $stmt = $pdo->prepare("DELETE FROM rides WHERE id = ?");
+    $stmt = $pdo->prepare("DELETE FROM rides WHERE ride_id = ?");
     $stmt->execute([$ride_id]);
     header('Location: ride.php');
     exit();
@@ -18,8 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = "All fields are required!";
     } else {
         $stmt = isset($_GET['ride_id']) ? 
-            $pdo->prepare("UPDATE rides SET rider_id = ?, ride_type = ?, city_id = ?, date = ? WHERE id = ?") : 
-            $pdo->prepare("INSERT INTO rides (rider_id, ride_type, city_id, date) VALUES (?, ?, ?, ?)");
+            $pdo->prepare("UPDATE rides SET rider_id = ?, ride_type = ?, city_id = ?, ride_date = ? WHERE ride_id = ?") :
+            $pdo->prepare("INSERT INTO rides (rider_id, ride_type, city_id, ride_date) VALUES (?, ?, ?, ?)");
         $params = isset($_GET['ride_id']) ? [$rider_id, $ride_type, $city_id, $date, $_GET['ride_id']] : [$rider_id, $ride_type, $city_id, $date];
         $stmt->execute($params);
         header('Location: ride.php');
@@ -31,10 +31,10 @@ $ride = [
     'rider_id' => '',
     'ride_type' => '',
     'city_id' => '',
-    'date' => ''
+    'ride_date' => ''
 ];
 if (isset($_GET['ride_id'])) {
-    $stmt = $pdo->prepare("SELECT rider_id, ride_type, city_id, date FROM rides WHERE id = ?");
+    $stmt = $pdo->prepare("SELECT rider_id, ride_type, city_id, ride_date FROM rides WHERE ride_id = ?");
     $stmt->execute([$_GET['ride_id']]);
     $ride = $stmt->fetch(PDO::FETCH_ASSOC);
 }
@@ -68,8 +68,11 @@ try {
                 </option>
             <?php endforeach; ?>
         </select>
-        <label for="ride_type">Ride Type:</label>
-        <input type="text" id="ride_type" name="ride_type" value="<?= htmlspecialchars($ride['ride_type']); ?>">
+        <select id="ride_type" name="ride_type">
+            <option value="-" disabled>Select ride type</option>
+            <option value="ow" <?= ($ride['ride_type'] === 'ow') ? 'selected' : '' ?>>One Way</option>
+            <option value="bw" <?= ($ride['ride_type'] === 'bw') ? 'selected' : '' ?>>Both Ways</option>
+        </select>
         <label for="city">City:</label>
         <select id="city" name="city">
             <?php foreach ($cities as $city): ?>
@@ -79,7 +82,7 @@ try {
             <?php endforeach; ?>
         </select>
         <label for="date">Date:</label>
-        <input type="date" id="date" name="date" value="<?= htmlspecialchars($ride['date']); ?>">
+        <input type="date" id="date" name="date" value="<?= htmlspecialchars($ride['ride_date']); ?>">
         <button type="submit" name="submit"><?= isset($_GET['ride_id']) ? 'Update Ride' : 'Add Ride'; ?></button>
         <?php if (isset($_GET['ride_id'])): ?>
             <button type="submit" name="delete">Delete Ride</button>

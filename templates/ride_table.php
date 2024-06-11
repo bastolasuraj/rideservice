@@ -16,7 +16,7 @@
                 <?php
                 if (isset($pdo)) {
                     try {
-                        $stmt = $pdo->prepare("SELECT r.id, riders.name as rider, r.ride_type, cities.name as city, r.date FROM rides r JOIN riders ON r.rider_id = riders.rider_id JOIN cities ON r.city_id = cities.city_id");
+                        $stmt = $pdo->prepare("SELECT r.ride_id, riders.name as rider, r.ride_type, cities.name as city, r.ride_date FROM rides r JOIN riders ON r.rider_id = riders.rider_id JOIN cities ON r.city_id = cities.city_id");
                         $stmt->execute();
                         $rides = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         if (empty($rides)) {
@@ -29,9 +29,9 @@
                                     <td><?php echo htmlspecialchars($ride['rider']) ?> </td>
                                     <td><?php echo htmlspecialchars($ride['ride_type']) ?> </td>
                                     <td><?php echo htmlspecialchars($ride['city']) ?> </td>
-                                    <td><?php echo htmlspecialchars($ride['date']) ?> </td>
+                                    <td><?php echo htmlspecialchars($ride['ride_date']) ?> </td>
                                     <td>
-                                        <a class="button is-small is-info" href="<?php echo 'ride.php?ride_id=' . $ride['id']; ?>">Edit</a>
+                                        <a class="button is-small is-info" href="<?php echo 'ride.php?ride_id=' . $ride['ride_id']; ?>">Edit</a>
                                     </td>
                                 </tr>
                             <?php }
