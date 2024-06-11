@@ -1,0 +1,510 @@
+my basic codes:
+add_city.php
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit;
+}
+
+require 'db.php';
+
+if (isset($_POST['submit'])) {
+    $city = $_POST['city'];
+    $stmt = $pdo->prepare("INSERT INTO cities (name) VALUES (:name)");
+    $stmt->execute(['name' => $city]);
+    header("Location: add_city.php");
+    exit;
+}
+
+$cities = $pdo->query("SELECT * FROM cities")->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="navbar is-dark">
+    <div class="date"><?php echo date('Y-m-d'); ?></div>
+    <div class="navbar-brand">
+        <span class="navbar-item">My Ride Service</span>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <span class="navbar-item" id="current-date"></span>
+        </div>
+        <div class="navbar-end auth">
+            <a href="login.php" class="navbar-item">Login</a>
+            <a href="register.php" class="navbar-item">Register</a>
+            <a href="logout.php" class="navbar-item">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<section id="cityEntryForm">
+    <form action="" method="post">
+        <label for="city">New City:</label>
+        <input type="text" name="city" id="city" required>
+        <input type="submit" name="submit" value="Enter City" id="submit">
+    </form>
+</section>
+<section id="cityDetailTable">
+    <table>
+        <thead>
+        <tr>
+            <th>Sn.</th>
+            <th>Cities</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($cities as $index => $city): ?>
+            <tr>
+                <td><?php echo $index + 1; ?></td>
+                <td><?php echo $city['name']; ?></td>
+                <td>
+                    <button onclick="editCity(<?php echo $city['id']; ?>)">Edit</button>
+                    <button onclick="deleteCity(<?php echo $city['id']; ?>)">Delete</button>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</section>
+<footer>&copy; Suraj Bastola</footer>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
+add_ride.php
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit;
+}
+
+require 'db.php';
+
+if (isset($_POST['submit'])) {
+    $rider = $_POST['rider'];
+    $ride_type = $_POST['ride_type'];
+    $ride_from = $_POST['city'];
+    $date = $_POST['date'];
+
+    // Validate rider_id
+    $stmt = $pdo->prepare("SELECT * FROM riders WHERE rider_id = :rider_id");
+    $stmt->execute(['rider_id' => $rider]);
+    if ($stmt->rowCount() > 0) {
+        // Rider exists, proceed with insertion
+        $stmt = $pdo->prepare("INSERT INTO rides (rider_id, ride_type, ride_from, date) VALUES (:rider_id, :ride_type, :ride_from, :date)");
+        try {
+            $stmt->execute(['rider_id' => $rider, 'ride_type' => $ride_type, 'ride_from' => $ride_from, 'date' => $date]);
+            header("Location: add_ride.php");
+            exit;
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+    } else {
+        echo "Error: Invalid rider selected.";
+    }
+}
+
+$riders = $pdo->query("SELECT * FROM riders")->fetchAll(PDO::FETCH_ASSOC);
+$cities = $pdo->query("SELECT * FROM cities")->fetchAll(PDO::FETCH_ASSOC);
+$rides = $pdo->query("SELECT rides.*, riders.name AS rider_name, cities.name AS city_name FROM rides
+                      JOIN riders ON rides.rider_id = riders.rider_id
+                      JOIN cities ON rides.ride_from = cities.city_id")->fetchAll(PDO::FETCH_ASSOC);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ride Service</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav>
+    <div class="date"><?php echo date('Y-m-d'); ?></div>
+    <div class="title">Ride Service</div>
+    <div class="auth">
+        <a href="logout.php">Logout</a>
+    </div>
+</nav>
+<section id="rideEntryForm">
+    <form action="" method="post">
+        <label for="rider">Rider:</label>
+        <select name="rider" id="rider" required>
+            <option value="0" disabled>Select one</option>
+            <?php foreach ($riders as $rider): ?>
+                <option value="<?php echo $rider['rider_id']; ?>"><?php echo $rider['name']; ?></option>
+            <?php endforeach; ?>
+        </select>
+        <label for="ride_type">Ride Type:</label>
+        <select name="ride_type" id="ride_type" required>
+            <option value="oneWay">One Way</option>
+            <option value="bothWays">Both Ways</option>
+        </select>
+        <label for="city">City:</label>
+        <select name="city" id="city" required>
+            <option value="0" disabled>Select one</option>
+            <?php foreach ($cities as $city): ?>
+                <option value="<?php echo $city['city_id']; ?>"><?php echo $city['name']; ?></option>
+            <?php endforeach; ?>
+        </select>
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" required>
+        <input type="submit" name="submit" value="Enter Ride" id="submit">
+    </form>
+</section>
+<section id="rideDetailTable">
+    <table>
+        <thead>
+        <tr>
+            <th>Sn.</th>
+            <th>Rider</th>
+            <th>City</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($rides as $index => $ride): ?>
+            <tr>
+                <td><?php echo $index + 1; ?></td>
+                <td><?php echo $ride['rider_name']; ?></td>
+                <td><?php echo $ride['city_name']; ?></td>
+                <td><?php echo $ride['ride_type']; ?></td>
+                <td><?php echo $ride['date']; ?></td>
+                <td>
+                    <button onclick="editRide(<?php echo $ride['id']; ?>)">Edit</button>
+                    <button onclick="deleteRide(<?php echo $ride['id']; ?>)">Delete</button>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</section>
+<footer>&copy; Suraj Bastola</footer>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
+
+add_rider.php
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit;
+}
+
+require 'db.php';
+
+if (isset($_POST['submit'])) {
+    $rider = $_POST['rider'];
+    $referrer = $_POST['referrer'] ?: null;
+    $stmt = $pdo->prepare("INSERT INTO riders (name, referrer_id) VALUES (:name, :referrer_id)");
+    $stmt->execute(['name' => $rider, 'referrer_id' => $referrer]);
+    header("Location: add_rider.php");
+    exit;
+}
+
+$riders = $pdo->query("SELECT * FROM riders")->fetchAll(PDO::FETCH_ASSOC);
+print_r($riders);
+//die;
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rider</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav>
+    <div class="date"><?php echo date('Y-m-d'); ?></div>
+    <div class="title">Ride Service</div>
+    <div class="auth">
+        <a href="logout.php">Logout</a>
+    </div>
+</nav>
+<section id="riderEntryForm">
+    <form action="" method="post">
+        <label for="rider">New Rider:</label>
+        <input type="text" name="rider" id="rider" required>
+        <label for="referrer">Referrer: </label>
+        <input list="riders" name="referrer" id="referrer">
+        <datalist id="riders">
+            <?php foreach ($riders as $rider): ?>
+                <option value="<?php echo $rider['rider_id']; ?>"><?php echo $rider['name']; ?></option>
+            <?php endforeach; ?>
+        </datalist>
+        <input type="submit" name="submit" value="Enter Rider" id="submit">
+    </form>
+</section>
+<section id="riderDetailTable">
+    <table>
+        <thead>
+        <tr>
+            <th>Sn.</th>
+            <th>Rider</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($riders as $index => $rider): ?>
+            <tr>
+                <td><?php echo $index + 1; ?></td>
+                <td><?php echo $rider['name']; ?></td>
+                <td>
+                    <button onclick="editRider(<?php echo $rider['rider_id']; ?>)">Edit</button>
+                    <button onclick="deleteRider(<?php echo $rider['rider_id']; ?>)">Delete</button>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+</section>
+<footer>&copy; Suraj Bastola</footer>
+<script src="../js/scripts.js"></script>
+</body>
+</html>
+db.php
+<?php
+$hostname = "localhost";
+$username = "sbastola_itil";
+$password = "eu9MB6!fh2@ITIL";
+$database = "sbastola_itil";
+
+try {
+    $pdo = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo 'Connection failed: ' . $e->getMessage();
+}
+?>
+login.php
+<?php
+session_start();
+require 'db.php';
+
+if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE username = :username");
+    $stmt->execute(['username' => $username]);
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($user && password_verify($password, $user['password'])) {
+        $_SESSION['username'] = $user['username'];
+        header("Location: ../index.php");
+        exit;
+    } else {
+        $error = "Invalid username or password";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav>
+    <div class="date"><?php echo date('Y-m-d'); ?></div>
+    <div class="title">Ride Service</div>
+    <div class="auth">
+        <a href="register.php">Register</a>
+    </div>
+</nav>
+<section id="loginForm">
+    <form action="" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <input type="submit" name="submit" value="Login">
+    </form>
+    <?php if (isset($error)): ?>
+        <p><?php echo $error; ?></p>
+    <?php endif; ?>
+</section>
+<footer>&copy; Suraj Bastola</footer>
+</body>
+</html>
+logout.php
+<?php
+session_start();
+session_destroy();
+header('location: ../index.php');
+register.php
+<?php
+require 'db.php';
+
+if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+
+    $stmt = $pdo->prepare("INSERT INTO users (username, password) VALUES (:username, :password)");
+    $stmt->execute(['username' => $username, 'password' => $password]);
+
+    header("Location: login.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<nav>
+    <div class="date"><?php echo date('Y-m-d'); ?></div>
+    <div class="title">Ride Service</div>
+    <div class="auth">
+        <a href="login.php">Login</a>
+    </div>
+</nav>
+<section id="registerForm">
+    <form action="" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <input type="submit" name="submit" value="Register">
+    </form>
+</section>
+<footer>&copy; Suraj Bastola</footer>
+</body>
+</html>
+database.sql
+CREATE DATABASE if not exists sbastola_itil;
+
+USE sbastola_itil;
+
+CREATE TABLE if not exists users
+(
+    user_id  INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50)  NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE if not exists cities
+(
+    city_id INT AUTO_INCREMENT PRIMARY KEY,
+    name    VARCHAR(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE if not exists riders
+(
+    rider_id    INT AUTO_INCREMENT PRIMARY KEY,
+    name        VARCHAR(100) NOT NULL UNIQUE,
+    referrer_id INT,
+    FOREIGN KEY (referrer_id) REFERENCES riders (rider_id)
+);
+
+CREATE TABLE if not exists rides
+(
+    id        INT AUTO_INCREMENT PRIMARY KEY,
+    rider_id  INT,
+    ride_type ENUM ('oneWay', 'bothWays'),
+    ride_from INT,
+    date      DATE,
+    FOREIGN KEY (rider_id) REFERENCES riders (rider_id),
+    FOREIGN KEY (ride_from) REFERENCES cities (city_id)
+);
+
+
+Instructions:
+This is a simple form with rider, city and ride details.
+Desired project structure:
+ride_service/
+├── index.php
+├── login.php
+├── logout.php
+├── register.php
+├── authenticate.php
+├── add_city.php
+├── add_ride.php
+├── css/
+│   └── custom.css
+├── js/
+│   └── custom.js
+├── templates/
+│   ├── header.php
+│   ├── footer.php
+│   ├── navbar.php
+│   ├── login_form.php
+│   ├── register_form.php
+│   ├── ride_form.php
+│   ├── ride_table.php
+└── db/
+    └── db_connect.php
+Connections:
+    add_city.php:
+        Not Logged in/normal user logged in:
+        - Don't display this link.
+        Admin logged in:
+        - Display a form to enter a new city
+        - Display the table with name of the cities
+        - Display action buttons to edit or delete the city.
+        When Clicked on the delete button, delete the city.
+        When clicked on the Edit button, Edit the name of the city using the same form.
+
+    add_rider.php:
+        Not Logged in/normal user logged in:
+        - Don't display this link.
+        Admin Logged in:
+        - Display the form to Enter New Rider and a referrer(optional).
+        - Display table to show the riders and referrers
+        - Display action buttons to edit or delete the riders
+        - Referrer is the registered rider
+        functions:
+        Referrer gets $5 discount when the rider and the referrer are taking ride at the same time, but is only applicable if the referrer is taking both ways ride.
+        When Clicked on the delete button, delete the city.
+        When clicked on the Edit button, Edit the name of the city using the same form.
+
+    add_ride.php:
+        Not Logged in/normal user logged in:
+        - Display table to show the riders and referrers
+        Admin Logged in:
+        - Display the form to Enter New Ride details for a rider
+        - Display action buttons to edit or delete the rides
+        Functions:
+            Rider is the registered rider
+            There are two types of ride, one way and both ways
+            Ride from takes the name of the cities
+            Date is the date when the ride is requested
+
+
+What I need is full working code for:
+    PHP Scripts to make this work,
+    CSS (Bulma Preferred) to make it look beautiful and not let the page refresh when actions are taken
+    all custom javascript and css and php files to be in their own file, files managed hierarchically
+Look I Intend to have:
+A faded black navbar with title of the app in the center, current date in the left and login/logout/register user button on the right.
+Same colored footer with text "&copy; Suraj Bastola", centered
+a sql query file for database and tables creation.
+proper redirections
+proper functions and functionalities for the webapp to work.
+responsiveness.
+finally, do not show any forms if opened in a mobile device, except login forms.
+Also create a theme.php file that has elements to change to desired theme. for example when I want to change the background color, I can just select the color I want from the color picker and set it and the background color changes. Do this for every element.
+
+Write complete code, do not leave any place holders.

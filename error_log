@@ -1,0 +1,261 @@
+[06-Jun-2024 13:54:01 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 30
+[06-Jun-2024 13:59:36 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 30
+[06-Jun-2024 14:00:36 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 30
+[06-Jun-2024 14:00:42 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/add_city.php on line 18
+[06-Jun-2024 14:00:42 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 30
+[06-Jun-2024 14:00:56 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/add_city.php on line 18
+[06-Jun-2024 14:00:56 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 30
+[06-Jun-2024 14:00:58 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/add_city.php on line 18
+[06-Jun-2024 14:00:58 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 30
+[06-Jun-2024 14:01:16 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 30
+[06-Jun-2024 14:01:18 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 30
+[06-Jun-2024 14:02:56 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 28
+[06-Jun-2024 14:02:58 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 28
+[06-Jun-2024 14:02:59 UTC] PHP Parse error:  Unmatched '}' in /home/sbastola/public_html/newRide/templates/city_form.php on line 45
+[06-Jun-2024 14:03:44 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 20
+[06-Jun-2024 14:03:44 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 39
+[06-Jun-2024 14:03:46 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 20
+[06-Jun-2024 14:03:46 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 39
+[06-Jun-2024 14:03:47 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 20
+[06-Jun-2024 14:03:47 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 39
+[06-Jun-2024 14:04:54 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 20
+[06-Jun-2024 14:04:54 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 39
+[06-Jun-2024 14:04:55 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 20
+[06-Jun-2024 14:04:55 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 39
+[06-Jun-2024 14:04:58 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 20
+[06-Jun-2024 14:04:58 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 39
+[06-Jun-2024 14:06:54 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 37
+[06-Jun-2024 14:06:56 UTC] PHP Warning:  Undefined array key "name" in /home/sbastola/public_html/newRide/templates/city_form.php on line 37
+[06-Jun-2024 14:32:28 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:28 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:29 UTC] PHP Warning:  Undefined array key "city_id" in /home/sbastola/public_html/newRide/templates/city_form.php on line 29
+[06-Jun-2024 14:32:29 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:29 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:31 UTC] PHP Warning:  Undefined array key "city_id" in /home/sbastola/public_html/newRide/templates/city_form.php on line 29
+[06-Jun-2024 14:32:31 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:31 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:33 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:33 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:35 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:35 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:41 UTC] PHP Warning:  Undefined array key "city_id" in /home/sbastola/public_html/newRide/templates/city_form.php on line 29
+[06-Jun-2024 14:32:41 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:32:41 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:33:34 UTC] PHP Warning:  Undefined array key "city_id" in /home/sbastola/public_html/newRide/templates/city_form.php on line 29
+[06-Jun-2024 14:33:34 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:33:34 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:33:38 UTC] PHP Warning:  Undefined array key "city_id" in /home/sbastola/public_html/newRide/templates/city_form.php on line 29
+[06-Jun-2024 14:33:38 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:33:38 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:33:40 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:33:40 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:33:41 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:33:41 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:33:41 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:33:41 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:34:36 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:34:36 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:34:56 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:34:56 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:34:57 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:34:57 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 48
+[06-Jun-2024 14:37:19 UTC] PHP Warning:  Undefined array key "city_id" in /home/sbastola/public_html/newRide/templates/city_form.php on line 29
+[06-Jun-2024 14:38:18 UTC] PHP Warning:  Undefined array key "city_id" in /home/sbastola/public_html/newRide/templates/city_form.php on line 29
+[06-Jun-2024 14:38:20 UTC] PHP Warning:  Undefined array key "city_id" in /home/sbastola/public_html/newRide/templates/city_form.php on line 29
+[06-Jun-2024 14:41:03 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 51
+[06-Jun-2024 14:41:03 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 51
+[06-Jun-2024 14:41:24 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 52
+[06-Jun-2024 14:41:24 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 52
+[06-Jun-2024 14:41:40 UTC] PHP Warning:  Undefined variable $city in /home/sbastola/public_html/newRide/templates/city_form.php on line 51
+[06-Jun-2024 14:41:40 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/city_form.php on line 51
+[06-Jun-2024 14:49:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_city() in /home/sbastola/public_html/newRide/templates/city_form.php:4
+Stack trace:
+#0 /home/sbastola/public_html/newRide/add_city.php(7): include()
+#1 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/city_form.php on line 4
+[06-Jun-2024 17:55:28 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 23
+[06-Jun-2024 17:55:48 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 23
+[06-Jun-2024 17:57:54 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 3
+[06-Jun-2024 17:57:57 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 3
+[06-Jun-2024 17:59:28 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 23
+[06-Jun-2024 17:59:35 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 23
+[06-Jun-2024 18:07:20 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 2
+[06-Jun-2024 18:07:23 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 2
+[06-Jun-2024 18:07:26 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 2
+[06-Jun-2024 18:07:48 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 2
+[06-Jun-2024 18:09:01 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 2
+[06-Jun-2024 18:09:12 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 2
+[06-Jun-2024 18:09:14 UTC] PHP Warning:  Undefined array key "city" in /home/sbastola/public_html/newRide/templates/city_form.php on line 2
+[06-Jun-2024 18:22:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_2` FOREIGN KEY (`city_id`) REFERENCES `cities` (`city_id`)) in /home/sbastola/public_html/newRide/templates/city_form.php:4
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/city_form.php(4): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/templates/city_form.php(12): deleteCity()
+#2 /home/sbastola/public_html/newRide/city.php(7): include('/home/sbastola/...')
+#3 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/city_form.php on line 4
+[06-Jun-2024 18:25:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_2` FOREIGN KEY (`city_id`) REFERENCES `cities` (`city_id`)) in /home/sbastola/public_html/newRide/templates/city_form.php:4
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/city_form.php(4): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/templates/city_form.php(12): deleteCity()
+#2 /home/sbastola/public_html/newRide/city.php(7): include('/home/sbastola/...')
+#3 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/city_form.php on line 4
+[06-Jun-2024 18:25:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_2` FOREIGN KEY (`city_id`) REFERENCES `cities` (`city_id`)) in /home/sbastola/public_html/newRide/templates/city_form.php:4
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/city_form.php(4): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/templates/city_form.php(12): deleteCity()
+#2 /home/sbastola/public_html/newRide/city.php(7): include('/home/sbastola/...')
+#3 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/city_form.php on line 4
+[06-Jun-2024 18:25:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_2` FOREIGN KEY (`city_id`) REFERENCES `cities` (`city_id`)) in /home/sbastola/public_html/newRide/templates/city_form.php:4
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/city_form.php(4): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/templates/city_form.php(12): deleteCity()
+#2 /home/sbastola/public_html/newRide/city.php(7): include('/home/sbastola/...')
+#3 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/city_form.php on line 4
+[06-Jun-2024 18:34:51 UTC] PHP Warning:  Undefined variable $riders in /home/sbastola/public_html/newRide/templates/rider_form.php on line 8
+[06-Jun-2024 18:34:51 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/sbastola/public_html/newRide/templates/rider_form.php on line 8
+[06-Jun-2024 18:34:53 UTC] PHP Warning:  Undefined variable $riders in /home/sbastola/public_html/newRide/templates/rider_form.php on line 8
+[06-Jun-2024 18:34:53 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/sbastola/public_html/newRide/templates/rider_form.php on line 8
+[06-Jun-2024 18:34:55 UTC] PHP Warning:  Undefined variable $riders in /home/sbastola/public_html/newRide/templates/rider_form.php on line 8
+[06-Jun-2024 18:34:55 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/sbastola/public_html/newRide/templates/rider_form.php on line 8
+[06-Jun-2024 18:34:56 UTC] PHP Warning:  Undefined variable $riders in /home/sbastola/public_html/newRide/templates/rider_form.php on line 8
+[06-Jun-2024 18:34:56 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/sbastola/public_html/newRide/templates/rider_form.php on line 8
+[06-Jun-2024 18:36:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_1` FOREIGN KEY (`rider_id`) REFERENCES `riders` (`rider_id`)) in /home/sbastola/public_html/newRide/templates/rider_form.php:4
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/rider_form.php(4): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/templates/rider_form.php(12): deleteRider()
+#2 /home/sbastola/public_html/newRide/rider.php(7): include('/home/sbastola/...')
+#3 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/rider_form.php on line 4
+[10-Jun-2024 16:50:40 UTC] PHP Parse error:  Unclosed '{' on line 26 in /home/sbastola/public_html/newRide/templates/ride_table.php on line 54
+[10-Jun-2024 16:51:37 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:51:37 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:51:37 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:51:37 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:51:57 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:51:57 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:51:57 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:51:57 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:54:14 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:54:14 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:54:14 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:54:14 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:54:41 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:54:41 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:54:41 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 16:54:41 UTC] PHP Warning:  Undefined array key "ride_id" in /home/sbastola/public_html/newRide/templates/ride_table.php on line 38
+[10-Jun-2024 17:42:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ride_from' in 'field list' in /home/sbastola/public_html/newRide/templates/ride_form.php:45
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/ride_form.php(45): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/ride.php(7): include('/home/sbastola/...')
+#2 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/ride_form.php on line 45
+[10-Jun-2024 17:42:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ride_from' in 'field list' in /home/sbastola/public_html/newRide/templates/ride_form.php:45
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/ride_form.php(45): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/ride.php(7): include('/home/sbastola/...')
+#2 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/ride_form.php on line 45
+[10-Jun-2024 17:42:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ride_from' in 'field list' in /home/sbastola/public_html/newRide/templates/ride_form.php:45
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/ride_form.php(45): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/ride.php(7): include('/home/sbastola/...')
+#2 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/ride_form.php on line 45
+[10-Jun-2024 17:46:17 UTC] PHP Warning:  Undefined array key "ride_from" in /home/sbastola/public_html/newRide/templates/ride_form.php on line 57
+[10-Jun-2024 17:46:17 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 59
+[10-Jun-2024 17:46:33 UTC] PHP Warning:  Undefined array key "ride_from" in /home/sbastola/public_html/newRide/templates/ride_form.php on line 57
+[10-Jun-2024 17:46:33 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 59
+[10-Jun-2024 17:47:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_1` FOREIGN KEY (`rider_id`) REFERENCES `riders` (`rider_id`)) in /home/sbastola/public_html/newRide/templates/rider_form.php:4
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/rider_form.php(4): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/templates/rider_form.php(12): deleteRider()
+#2 /home/sbastola/public_html/newRide/rider.php(7): include('/home/sbastola/...')
+#3 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/rider_form.php on line 4
+[10-Jun-2024 17:49:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_1` FOREIGN KEY (`rider_id`) REFERENCES `riders` (`rider_id`)) in /home/sbastola/public_html/newRide/templates/rider_form.php:4
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/rider_form.php(4): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/templates/rider_form.php(12): deleteRider()
+#2 /home/sbastola/public_html/newRide/rider.php(7): include('/home/sbastola/...')
+#3 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/rider_form.php on line 4
+[10-Jun-2024 18:01:58 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 75
+[10-Jun-2024 18:01:58 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 76
+[10-Jun-2024 18:01:58 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 83
+[10-Jun-2024 18:08:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ride_from' in 'field list' in /home/sbastola/public_html/newRide/templates/ride_form.php:28
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/ride_form.php(28): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/ride.php(7): include('/home/sbastola/...')
+#2 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/ride_form.php on line 28
+[10-Jun-2024 18:10:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ride_from' in 'field list' in /home/sbastola/public_html/newRide/templates/ride_form.php:28
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/ride_form.php(28): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/ride.php(7): include('/home/sbastola/...')
+#2 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/ride_form.php on line 28
+[10-Jun-2024 18:10:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_1` FOREIGN KEY (`rider_id`) REFERENCES `riders` (`rider_id`)) in /home/sbastola/public_html/newRide/templates/ride_form.php:28
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/ride_form.php(28): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/ride.php(7): include('/home/sbastola/...')
+#2 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/ride_form.php on line 28
+[10-Jun-2024 18:12:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_1` FOREIGN KEY (`rider_id`) REFERENCES `riders` (`rider_id`)) in /home/sbastola/public_html/newRide/templates/ride_form.php:28
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/ride_form.php(28): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/ride.php(7): include('/home/sbastola/...')
+#2 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/ride_form.php on line 28
+[10-Jun-2024 18:14:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_1` FOREIGN KEY (`rider_id`) REFERENCES `riders` (`rider_id`)) in /home/sbastola/public_html/newRide/templates/ride_form.php:28
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/ride_form.php(28): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/ride.php(7): include('/home/sbastola/...')
+#2 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/ride_form.php on line 28
+[10-Jun-2024 18:16:38 UTC] PHP Warning:  Undefined variable $rider in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:16:38 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:17:06 UTC] PHP Warning:  Undefined variable $rider in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:17:06 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:17:37 UTC] PHP Warning:  Undefined variable $rider in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:17:37 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:17:37 UTC] PHP Warning:  Undefined variable $rider in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:17:37 UTC] PHP Warning:  Trying to access array offset on null in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 78
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 79
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 85
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 85
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 90
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 78
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 79
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 85
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 85
+[10-Jun-2024 18:53:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 90
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 78
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 79
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 85
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 85
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 90
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 72
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 78
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 79
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 85
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 85
+[10-Jun-2024 18:54:32 UTC] PHP Warning:  Trying to access array offset on false in /home/sbastola/public_html/newRide/templates/ride_form.php on line 90
+[10-Jun-2024 20:10:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`sbastola_itil`.`rides`, CONSTRAINT `rides_ibfk_1` FOREIGN KEY (`rider_id`) REFERENCES `riders` (`rider_id`)) in /home/sbastola/public_html/newRide/templates/rider_form.php:4
+Stack trace:
+#0 /home/sbastola/public_html/newRide/templates/rider_form.php(4): PDOStatement->execute()
+#1 /home/sbastola/public_html/newRide/templates/rider_form.php(12): deleteRider()
+#2 /home/sbastola/public_html/newRide/rider.php(7): include('/home/sbastola/...')
+#3 {main}
+  thrown in /home/sbastola/public_html/newRide/templates/rider_form.php on line 4
+[11-Jun-2024 13:33:36 UTC] PHP Warning:  file_get_contents(page-001.php): Failed to open stream: No such file or directory in /home/sbastola/public_html/newRide/combined.php on line 12
