@@ -3,27 +3,22 @@ function deleteCity($pdo, $city_id) {
     $stmt = $pdo->prepare("DELETE FROM cities WHERE city_id = ?");
     $stmt->execute([$city_id]);
     header('Location: city.php');
+    exit();
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $city = trim($_POST['city']);
-
     if (isset($_POST['delete']) && isset($_GET['city_id'])) {
         deleteCity($pdo, $_GET['city_id']);
-        header('Location: city.php');
-        exit();
     }
-
     if (empty($city)) {
         $error = "City name cannot be empty!";
     } else {
-        $stmt = isset($_GET['city_id']) ?
-            $pdo->prepare("UPDATE cities SET name = ? WHERE city_id = ?") :
+        $stmt = isset($_GET['city_id']) ? 
+            $pdo->prepare("UPDATE cities SET name = ? WHERE city_id = ?") : 
             $pdo->prepare("INSERT INTO cities (name) VALUES (?)");
-
         $params = isset($_GET['city_id']) ? [$city, $_GET['city_id']] : [$city];
         $stmt->execute($params);
-
         header('Location: city.php');
         exit();
     }

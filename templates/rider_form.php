@@ -3,27 +3,22 @@ function deleteRider($pdo, $rider_id) {
     $stmt = $pdo->prepare("DELETE FROM riders WHERE rider_id = ?");
     $stmt->execute([$rider_id]);
     header('Location: rider.php');
+    exit();
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $rider = trim($_POST['rider']);
-
     if (isset($_POST['delete']) && isset($_GET['rider_id'])) {
         deleteRider($pdo, $_GET['rider_id']);
-        header('Location: rider.php');
-        exit();
     }
-
     if (empty($rider)) {
         $error = "Rider name cannot be empty!";
     } else {
-        $stmt = isset($_GET['rider_id']) ?
-            $pdo->prepare("UPDATE riders SET name = ? WHERE rider_id = ?") :
+        $stmt = isset($_GET['rider_id']) ? 
+            $pdo->prepare("UPDATE riders SET name = ? WHERE rider_id = ?") : 
             $pdo->prepare("INSERT INTO riders (name) VALUES (?)");
-
         $params = isset($_GET['rider_id']) ? [$rider, $_GET['rider_id']] : [$rider];
         $stmt->execute($params);
-
         header('Location: rider.php');
         exit();
     }
