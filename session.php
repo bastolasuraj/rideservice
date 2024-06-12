@@ -18,4 +18,5 @@ function regenerateSession() {
         $_SESSION['CREATED'] = time();
     }
 }
+
 ?>

@@ -23,29 +23,42 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<form id="loginForm" method="POST" action="login.php">
-    <h2>Login</h2>
-    <?php if (isset($error)): ?>
-        <p style="color: red;"><?php echo $error; ?></p>
-    <?php endif; ?>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
+<div id="loginForm" class="box">
+    <h1 class="title">Login</h1>
+    <form id="login" method="post" action="login.php">
+        <?php if (isset($error)): ?>
+            <p style="color: red;"><?php echo $error; ?></p>
+        <?php endif; ?>
+        <div class="field">
+            <label class="label" for="username">Username</label>
+            <div class="control">
+                <input class="input" type="text" name="username" id="username" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="password">Password</label>
+            <div class="control">
+                <input class="input" type="password" name="password" id="password" required>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button class="button is-link" type="submit">Login</button>
+            </div>
+        </div>
+    </form>
+</div>
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
 
-    <button type="submit">Login</button>
-</form>
-
-<script>
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-        if (username === '' || password === '') {
-            event.preventDefault();
-            alert('Please fill in both fields.');
-        }
-    });
-</script>
+<!--<script>-->
+<!--    document.getElementById('loginForm').addEventListener('submit', function(event) {-->
+<!--        var username = document.getElementById('username').value;-->
+<!--        var password = document.getElementById('password').value;-->
+<!--        if (username === '' || password === '') {-->
+<!--            event.preventDefault();-->
+<!--            alert('Please fill in both fields.');-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
 
 <?php include 'templates/footer.php'; ?>

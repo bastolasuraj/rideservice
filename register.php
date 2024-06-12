@@ -21,23 +21,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<form id="registerForm" method="POST" action="register.php">
-    <h2>Register</h2>
+<div id="registerForm" class="box">
+    <h1 class="title">Register</h1>
     <?php if (isset($error)): ?>
         <p style="color: red;"><?php echo $error; ?></p>
     <?php endif; ?>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-
-    <label for="confirm_password">Confirm Password:</label>
-    <input type="password" id="confirm_password" name="confirm_password" required>
-
-    <button type="submit">Register</button>
-</form>
-
+    <form id="register" action="register.php" method="post">
+        <div class="field">
+            <label class="label" for="username">Username</label>
+            <div class="control">
+                <input class="input" type="text" name="username" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="password">Password</label>
+            <div class="control">
+                <input class="input" type="password" name="password" required>
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="confirm_password">Confirm Password</label>
+            <div class="control">
+                <input class="input" type="password" name="confirmPassword" required>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button class="button is-link" type="submit">Register</button>
+            </div>
+        </div>
+    </form>
+</div>
 <script>
     document.getElementById('registerForm').addEventListener('submit', function(event) {
         var username = document.getElementById('username').value;

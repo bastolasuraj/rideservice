@@ -22,7 +22,7 @@ $files = [
     'delete.php',
     'css/styles.css',
     'db/db_connect.php',
-//    'js/scripts.js',
+//    'js/script.js',
     'sql/create_tables.sql',
 ];
 
